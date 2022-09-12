@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - Print string to a newline using puts function
+ * main - print string on a newline using printf function
  *
- * Description: Using puts function to print string in a newline
+ * Decription: print string on a newline
  *
- * Return: 1 if error occurs. 0 otherwise
+ * Return: 1 if error. Otherwise 0 when successful
  */
 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
 
