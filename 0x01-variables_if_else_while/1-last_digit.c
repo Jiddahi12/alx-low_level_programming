@@ -1,30 +1,31 @@
-# include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 /**
- * main - entry point
- * Description: prints  if a number is positive or negative.
- * Return: 0 if successful, otherwise 1
+ * main - Entry point
+ * Description: checks on the last digit of the assigned var
+ * Return: 0 (success), otherwise 1 (error)
  */
 
 int main(void)
 {
-	int n;
+	int n, m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	m = n % 10;
+	if (m > 5)
 	{
-		printf("%d is positive\n", n);
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
-	else if (n == 0)
+	else if (m < 6 && m != 0)
 	{
-		printf("%d is zero\n", n);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
 	}
-	else if (n < 0)
+	else
 	{
-		printf("%d is negative\n", n);
+		printf("Last digit of %d is %d and is 0\n", n, m);
 	}
 	return (0);
 }
