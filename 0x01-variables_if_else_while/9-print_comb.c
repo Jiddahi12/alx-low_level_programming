@@ -1,32 +1,23 @@
 #include <stdio.h>
-#include <stdio.h>
-
-
 /**
- * main - prints reversed alphabet.
- *
- * Return: Always 0 (success)
- * main- Write a program that prints all possible 
- * combinations of a single-digit numbers
- * Return: 0 (success)
+ * main - printing numbers from 0-9 with commas and space between them
+ * Description: using the main function
+ * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+ * Return: 0
  */
-
-int main (void)
+int main(void)
 {
-	int i;
-	int d;
+	int c;
 
-	for (i = 122; i > 96; i--)
-	for (d = '0'; d <= '9'; d++)
+	for (c = 48; c <= 57; c++)
 	{
-		putchar(i);
-		putchar(d);
-		if (d != '9')
-	{
-		putchar(',');
-		putchar(' ');
+		putchar(c);
+		if (c != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
+		putchar('/n');
+	return (0);
 }
-putchar('/n');
-return (0);
-	
