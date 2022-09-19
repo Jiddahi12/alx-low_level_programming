@@ -1,26 +1,22 @@
 #include <stdio.h>
 /**
  * main - entry point
- * Return: alway returns 0
+ * Return: alway returns 0 (success/correct)
  */
 
 int main(void)
 
 {
-	unsigned char a = '0';
-	int i;
+	char base_16;
 
-	for (i = 0; i < 10; i++)
+	for (base_16 = 48; base_16 <= 57; base_16++)
 	{
-		putchar(a);
-		a++;
+		putchar(base_16);
 	}
-	a = '1';
-	for (i = 0; i < 6; i++)
-	{
-				putchar('0' + a);
-		a++;
-	}
+		for (base_16 = 97 ; base_16 <= 102; base_16++)
+		{
+		putchar(base_16);
+		}
 	putchar('\n');
 	return (0);
 }
