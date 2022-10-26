@@ -4,6 +4,8 @@
 
 
 
+
+
 int _putchar(char c);
 
 int _islower(int c);
@@ -46,4 +48,4 @@ char *_strstr(char *haystack, char *needle);
 
 
 
-#endif
+#endif /* MAIN_H */
