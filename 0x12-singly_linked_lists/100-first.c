@@ -1,19 +1,13 @@
 #include "lists.h"
 
 /**
- * free_list - Free all the list with return NULL
- * @head: the head pointer
- * Return: retunrn the printed value
+ * myStartupFun - executes before the main
+ *
+ * Return: the print out.
  */
 
-void free_list(list_t *head)
+void myStartupFun(void)
 {
-	if (head != NULL)
-	{
-		if (head->str != NULL)
-			free(head->str);
-		free_list(head->next);
-		free(head);
-	}
-
+	printf("You're beat! and yet, you must allow,\n"
+		"I bore my house upon my back!\n");
 }
